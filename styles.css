@@ -6,7 +6,6 @@ h1{
     color: #fff;
 }
 .sidebar{
-    position: fixed;
     top: 0;
     left: 0;
     bottom: 0;
@@ -46,4 +45,33 @@ h1{
     font-weight: 600;
     font-size: 14px;
     font-family: "DM Sans", sans-serif;
+}
+
+.sidebar__library{
+    background-color: #121212;
+    border-radius: 8px;
+    padding: 16px 0 0 16px;
+    margin-top: 20px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sidebar__library{
+    padding: 16px 0 0 16px;
+    color:#b3b3b3;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    font-family: "DM Sans", sans-serif;
+}
+
+.sidebar__library span{
+    color: #b3b3b3;
+}
+
+.icone_mais{
+    margin-left: -30px;
 }
