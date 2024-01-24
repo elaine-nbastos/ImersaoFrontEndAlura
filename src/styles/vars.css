@@ -1,0 +1,18 @@
+:root{
+    --fonte-principal: "DM Sans", sans-serif;
+
+    --corDeFundo-primaria: black;
+    --corDeFundo-secundaria: #121212;
+    --corDeFundo-terciaria: #242424;
+    
+    --corDeFonte-primaria: #fff;
+    --corDeFonte-secundaria: #b3b3b3;
+
+    --corDeFundo-botao-escuro: #878787;
+    --corDeFundo-botao-claro: #fff;
+
+    --corDeFonte-botao-primario: #fff;
+    --corDeFonte-botao-secundaria:black;
+    
+}
+
