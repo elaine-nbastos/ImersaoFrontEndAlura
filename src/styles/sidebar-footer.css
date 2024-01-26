@@ -8,6 +8,7 @@ h1 {
 }
 
 .sidebar {
+    position: fixed;
     top: 0;
     left: 0;
     bottom: 0;
