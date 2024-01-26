@@ -1,0 +1,5 @@
+@media (max-width:1015px) {
+    .playlist_itens{
+        grid-template-columns: 1fr 1fr;
+    }
+}
