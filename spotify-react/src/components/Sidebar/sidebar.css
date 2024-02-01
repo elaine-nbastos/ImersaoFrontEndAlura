@@ -4,9 +4,9 @@
     left: 0;
     top: 0;
     bottom: 0;
-    width: 25vw; /* 300px para rem */
+    width: 18.75rem25; /* 300px para rem */
     background-color: #000000;
-    padding: 1vw; /* 12px para rem */
+    padding: 0.75rem; /* 12px para rem */
 }
 
 .sidebar .logo {
@@ -99,13 +99,14 @@
 }
 
 .section-playlist {
-    background-color: #242424;
+    display: flex;
+    flex-direction: column;
     align-items: flex-start;
     border-radius: 0.5rem; /* 8px para rem */
-    gap: 1.25rem; /* 20px para rem */
+    gap: 2rem; /* 20px para rem */
     display: flex;
     justify-content: space-between;
-    min-block-size: 2.5rem;
+    
     color: #b3b3b3;
     font-weight: 600;
     font-size: 0.875rem;
@@ -113,7 +114,10 @@
     padding: 1rem 1.25rem;
 }
 
+
 .section-playlist .section-playlist__content {
+    background-color: #242424;
+    width: 100%;
     display: flex;
     flex-direction: column;
 }
@@ -130,4 +134,12 @@
 .section-playlist__content .subtitle {
     font-weight: 500;
     font-size: 0.8rem;
+}
+
+.section-playlist__button{
+    width: 113px;
+}
+
+.section-playlist__button-podcasts{
+    width: 140px;
 }
