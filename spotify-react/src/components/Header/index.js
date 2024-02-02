@@ -29,6 +29,8 @@ export default function HeaderNavigation() {
     const resultArtist = useRef(null);
     const playlistContainer = useRef(null);
     const searchInput = useRef(null);
+    const [greeting, setSaudacao] = useState('')
+
 
     useEffect(() => {
         if (searchTerm !== '') {
@@ -54,6 +56,19 @@ export default function HeaderNavigation() {
         setSearchTerm(event.target.value.toLowerCase())
     }
 
+    useEffect(() => {
+        const horaAtual = new Date().getHours();
+    
+        if (horaAtual < 12) {
+          setSaudacao('Bom dia!');
+        } else if (horaAtual < 18) {
+          setSaudacao('Boa tarde!');
+        } else {
+          setSaudacao('Boa noite!');
+        }
+      })
+
+
     return (
         <div className="main-container">
             <nav className="header__navigation">
@@ -77,7 +92,7 @@ export default function HeaderNavigation() {
             <div className="playlist-container" ref={playlistContainer} >
                 <div id="result-playlists" className={isHidden ? '' :  'hidden'}>
                     <div className="playlist">
-                        <h1 id="greeting"></h1>
+                        <h1 id="greeting">{greeting}</h1>
                         <h2 className="session">Navegar por todas as seções</h2>
                     </div>
     

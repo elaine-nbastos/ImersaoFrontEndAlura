@@ -1,9 +1,10 @@
 .main-container {
-  width: 75vw;
-  height: 100vh;
-  margin-left: 300px;
-  margin-right: 56px;
-  margin-top: 0px;
+  width: 81rem;
+  height: 85vh;
+  margin-left: 290px;
+  margin-right: 16px;
+  margin-top: -8px;
+  overflow-y: hidden;
 }
   
 .header__navigation {
@@ -24,7 +25,7 @@
 }
 
 .header__navigation .navigation .arrow-left {
-  margin-right: 1.25rem;
+  margin-right: 1vw;
 }
 
 .arrow-left,
@@ -44,8 +45,8 @@
 .header__search {
   display: flex;
   align-items: center;
-  width: 364px;
-  height: 48px;
+  width: 30vw;
+  height: 6vh;
   margin-left: 8px;
   background-color: #242424;
   border-radius: 500px;
@@ -61,7 +62,7 @@
 .header__search input {
   background: transparent;
   border: none;
-  padding: 0px 100px 0 12px;
+  padding: 0px 0 0 10px;
   color: #fff;
   text-overflow: ellipsis;
   outline: none;
@@ -76,16 +77,19 @@
 }
 
 .subscribe {
-  color: var(--corDeFonte-primaria);
+  width: 14vw;
+  height: 7vh;
+  color: var(--corDeFonte-secundaria);
   font-size: 16px;
   font-weight: 700;
-  background-color: var(--corDeFundo-botao-escuro);
-  margin-right: 32px;
+  background-color: var(--corDeFundo-secundaria);
+  margin-right: 1vw;
+  border-style: none;
 }
 
 .header__login .login {
-  width: 100px;
-  height: 48px;
+  width: 12vw;
+  height: 7vh;
   color: var(--text-base-dark);
   font-size: 16px;
   font-weight: 700;
@@ -106,9 +110,9 @@
 }
 
 .playlist-container {
-  height: 68vh;
+  height: 74vh;
   padding-top: 16px;
-  margin: 10px;
+  margin: 6px;
   border-radius: 10px;
   background-color: #121212;
 }
@@ -118,7 +122,7 @@
 }
 
 .playlist #greeting {
-  color: var(--text-base-light);
+  color: var(--corDeFonte-primaria);
   font-size: 32px;
   font-weight: 700;
   margin-bottom: 48px;
@@ -150,12 +154,7 @@
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-gap: 16px;
   gap: 16px;
-  margin-bottom: 16px;
-
-  display: grid;
-  gap: 16px;
-  grid-gap: 32px;
-  margin: 0 auto;
+  margin-bottom: 1px;
 }
 
 .cards {
@@ -338,4 +337,45 @@
   padding: 20px 40px;
   position: absolute;
   top: 120px;
+}
+
+@media (max-width:1024px){
+  
+  .main-container {
+    width: 100vw;
+    margin: 1vw;
+    padding: 1vw;
+}
+
+.header__navigation{
+  width: 95vw;
+  margin-left: 10vw;
+  margin-right: 10rem;
+}
+
+.navigation{
+  margin-right: 1rem;
+}
+
+.offer__list-item {
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 16px;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+}
+
+@media(max-width:720px){
+
+  .main-container {
+    width: 100vw;
+    margin: 1vw;
+    padding: 1vw;
+}
+
+.offer__list-item {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-bottom: 16px;
+}
 }
