@@ -1,9 +1,9 @@
 .main-container {
-  width: 90vw;
+  width: 75vw;
   height: 100vh;
-  margin-left: 320px;
+  margin-left: 300px;
   margin-right: 56px;
-  margin-top: -8px;
+  margin-top: 0px;
 }
   
 .header__navigation {
@@ -75,11 +75,11 @@
   align-items: center;
 }
 
-.header__login .subscribe {
-  color: var(--text-sub);
+.subscribe {
+  color: var(--corDeFonte-primaria);
   font-size: 16px;
   font-weight: 700;
-  background-color: transparent;
+  background-color: var(--corDeFundo-botao-escuro);
   margin-right: 32px;
 }
 
@@ -98,7 +98,7 @@
 
 .header__login .subscribe:hover {
   transform: scale(1.04);
-  color: var(--text-base-light);
+  color: var(--corDeFonte-secundaria);
 }
 
 .header__login .login:hover {
@@ -125,7 +125,7 @@
 }
 
 .playlist .session {
-  color: var(--text-base-light);
+  color: var(--corDeFonte-primaria);
   font-size: 24px;
   font-weight: 700;
 }

@@ -7,7 +7,6 @@ import smallRight from '../../assents/icons/small-right.png'
 import searchIcon from '../../assents/icons/search.png'
 import playList from '../../assents/playlist/1.jpeg'
 
-
 import playListTwo from '../../assents/playlist/2.png'
 import playListThree from "../../assents/playlist/3.jpeg"
 import playListFour from "../../assents/playlist/4.jpeg"
